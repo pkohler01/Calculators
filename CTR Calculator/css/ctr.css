@@ -1,0 +1,61 @@
+#mainContainer{
+	width: 500px;
+	height: 300px;
+}
+#calcHeader{
+	width: 500px;
+	height: 60px;
+}
+#calcwrapper{
+	width: 500px;
+	height: 220px;
+}
+#valtab{
+	width: 440px;
+}
+#feedback{
+	text-align: center;
+	height: 80px;
+	width: 400px;
+	margin-left: 18px;
+	margin-top: 12px;
+}
+#buttonContainer{
+	width: 440px;	
+	margin-top: 12px;
+	margin-left: 140px;
+}
+.calcHeader{
+	font-size: 32px;
+	margin: 0px;
+	padding: 0px;
+}
+hr.calcHeader{
+	height: 2px;
+	background-color: #000000;
+	width: 480px;
+	margin: 0px;
+	padding: 0px;
+}
+.tRow{
+	width: 160px;
+	height: 26px;
+}
+.rowLeft{
+	margin: 0px;
+	padding: 0px;
+}
+td.rowLeft{
+	width: 160px;
+	margin: 0px;
+	padding: 0px;
+}
+p.rowLeft{
+	font-weight: normal; 
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+}
+.rowRight{
+	width:180px;
+}

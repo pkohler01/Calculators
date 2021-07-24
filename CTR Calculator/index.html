@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>CTR Calculator</title>
+		<script src="script/ctr.js"></script>
+		<link rel="stylesheet" href="css/ctr.css">
+	</head>
+	
+	<body>
+		<div id="mainContainer">
+			<div id="calcHeader">
+				<p class="calcHeader">Click-Through Rate(CTR) Calculator</p>
+				<hr class="calcHeader">
+			</div> <!-- /calcHeader -->
+
+			<div id="calcwrapper">
+				<table id="valtab">
+					<tbody>
+						<tr id="rowone" class="tRow">
+							<td class="rowLeft"><p class="rowLeft">Ad Impressions&nbsp;</p></td>
+							<td class="rowRight"><input class="rightRow" type="text" id="impressions" name="impressions" placeholder="Impressions..."/></td>
+						</tr>
+						<tr id="rowtwo" class="tRow">
+							<td class="rowLeft"><p class="rowLeft">Ad Clicks &nbsp;</p></td>
+							<td class="rowRight"><input class="rightRow" type="text" id="clicks" name="clicks" placeholder="Clicks..."/></td>
+						</tr>
+						<tr id="rowthree" class="tRow">
+							<td class="rowLeft"><p class="rowLeft">Click-Through Rate: &nbsp;</p></td>
+							<td class="rowRight"><input class="rightRow" style="display:none;" type="text" id="ctr" placeholder="..."/></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<!-- buttons -->
+				<div id="buttonContainer">
+					<button id="calcaction" onclick="calcCPM();">Calculate</button> &nbsp; <button id="calcclear" onclick="calcClear();">Clear</button>
+				</div> <!-- /buttonContainer -->
+				
+				<div id="feedback">
+					<div id="warning" style="display:none;">Warning: Both fields must be populated in order for us to solve.</div>
+				</div> <!-- /feddback -->
+
+			</div> <!-- /calcwrapper -->
+			
+			
+		</div> <!-- /mainContainer -->
+	</body>
+</html>
+
+
+
+
+
+
