@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>CPM Calculator</title>
+		<script src="script/cpm.js"></script>
+		<link rel="stylesheet" href="css/cpm.css">
+	</head>
+	<body>
+	
+		<div id="mainContainer">
+
+			<div id="cpmheader">
+				<p class="cpmheader">Cost Per Thousand(CPM) Calculator</p>
+				<hr class="cpmheader">
+			</div> <!-- /cpmheader -->
+
+			<div id="calcwrapper">
+				<table id="valtab">
+					<tbody>
+						<tr id="rowone" class="tRow">
+							<td class="leftrow"><p class="inputfield">Impressions&nbsp;</p></td>
+							<td class="rightrow"><input type="text" id="impressions" name="impressions" placeholder="Impressions..."/></td>
+						</tr>
+						<tr id="rowtwo" class="tRow" style="width: 360px;">
+							<td class="leftrow"><p class="inputfield">CPM &nbsp;</p></td>
+							<td class="rightrow"><input type="text" id="cpm" name="cpm" placeholder="CPM..."/></td>
+						</tr>
+						<tr id="rowthree" class="tRow" style="width: 360px;">
+							<td class="leftrow"><p class="inputfield">Budget &nbsp;</p></td>
+							<td class="rightrow"><input type="text" id="budget" placeholder="Budget..."/></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- buttons -->
+				<button id="calcAction" onclick="calcCPM();">Calculate</button><button id="calcclear" onclick="calcClear();">Clear</button>
+				
+				<div id="feedback">
+					<div id="warning" style="display:none;">Warning: One of the fields must be left empty in order for us to solve.</div>
+					<div id="warningb" style="display:none;">Warning: Two of the fields must be populated in order for us to solve.</div>
+					<div id="cpmformula" style="display:none;">Formula: CPM = 1000 * Budget / Impressions</div>
+					<div id="impformula" style="display:none;">Formula: Impressions = 1000 * Budget / CPM</div>
+					<div id="budgetformula" style="display:none;">Formula: Budget = Impressions * CPM / 1000</div>
+
+
+				</div> <!-- /feedback -->
+			
+
+
+			</div> <!-- /calcwrapper -->
+
+		</div> <!-- /mainContainer -->
+	</body>
+</html>

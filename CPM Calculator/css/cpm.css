@@ -1,0 +1,56 @@
+#mainContainer{
+	width: 500px;
+	height: 400px;
+}
+#cpmheader{
+	width: 500px;
+	height: 60px;
+}
+
+#calcwrapper{
+	width: 360px;
+	height: 400px;
+	margin-top: 2px;
+	margin-left: 68px;
+}
+#valtab{
+	width: 360px;
+	margin-bottom: 12px;
+}
+#feedback{
+	height: 40px; 
+	padding-top: 16px;
+	width: 360px;
+	margin-bottom: 12px;
+	margin-left: 2px;
+	text-align: center;
+}
+#calcAction{
+	margin-left: 100px;
+}
+#calcclear{
+	margin-left: 20px;
+}
+.cpmheader{
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+hr.cpmheader{
+	height: 2px;
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+.tRow{
+	width: 360px;
+}
+.leftrow{
+	width:130px;
+}
+.rightrow{
+	width:210px;
+}
+.inputfield{
+	font-weight: bold; 
+	text-align: right;
+}
