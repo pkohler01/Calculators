@@ -1,0 +1,98 @@
+<div id="calcwrapper" style="width: 360px;">
+    <style type='text/css'>
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input{
+            width: 50px;
+        }
+        #forma, #formb {
+            padding-top: 18px;
+            padding-left: 10px;
+            font-size: 16px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            width: 250px;
+            float: left;
+        }
+        #calcone, #calctwo {
+            width: 500px;
+            height: 60px;
+            background-color: #F0F0F0;
+            border-radius: 6px;
+            text-align: left;
+        }
+        #calctwo{
+            margin-top: 16px;
+        }
+        #formab, #formbb{
+            padding-top: 18px;
+            padding-left: 6px;
+            width: 220px;
+            height: 20px;
+            float: left;
+        }
+        #resulta, #resultb {
+            resize: none;
+            width:122px;
+            margin-left: 20px;
+        }
+
+    </style>
+    
+    <div id='calcone'>
+        <div id="forma">
+            <input type="number" id='perca' name='perca' /> is what percent of <input type="number" id="inta" name="inta" />?
+        </div>
+        <div id="formab">
+            <button id="calca" onclick="calca();">Calculate</button> <input type="text" id="resulta" />
+        </div>
+    </div>
+    
+    <div id='calctwo'>
+        <div id="formb">
+            What is <input type="number" id='percb' name='percb' />% of <input type="number" id="intb" name="intb" />?
+        </div>
+        <div id="formbb">
+            <button id="calcb" onclick="calcb();">Calculate</button> <input type="text" id="resultb" />
+        </div>
+    </div>
+    
+    
+
+    <div style="height: 40px; padding-top: 16px">
+        <div id="warning" style="display:none;">Warning: Both fields must be populated in order for us to solve.</div>
+    </div>
+
+    <script type="text/javascript">
+        //calca
+        function calca() {        
+            var perc = document.getElementById('perca').value;
+            var inta = document.getElementById('inta').value;
+            
+            if (perc == '' || inta == ''){
+                document.getElementById('warning').style.display = 'block';
+            } else {
+                document.getElementById('warning').style.display = 'none';
+                result = perc/inta * 100;
+                document.getElementById('resulta').value = result;
+            }
+        }
+        
+        //calcb
+        function calcb() {
+            var perc = Number(document.getElementById('percb').value);
+            var inta = Number(document.getElementById('intb').value) / 100;
+            
+            if (perc == '' || inta == ''){
+                document.getElementById('warning').style.display = 'block';
+            } else {
+                document.getElementById('warning').style.display = 'none';
+                result = perc * inta;
+                document.getElementById('resultb').value = result;
+            }
+        }
+    </script>
+
+</div>
