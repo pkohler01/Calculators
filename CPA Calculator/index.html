@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>CPA Calculator</title>
+		<script src="script/cpa.js"></script>
+		<link rel="stylesheet" href="css/cpa.css">
+	</head>
+	<body>
+	
+		<div id="mainContainer">
+
+			<div id="cpmheader">
+				<p class="cpmheader">Cost Per Action Calculator</p>
+				<hr class="cpmheader">
+			</div> <!-- /cpmheader -->
+
+			<div id="calcwrapper">
+				<table id="valtab">
+					<tbody>
+						<tr id="rowone" class="tRow">
+							<td class="leftrow"><p class="inputfield">Conversions&nbsp;</p></td>
+							<td class="rightrow"><input type="text" id="clicks" name="clicks" placeholder="Clicks..."/></td>
+						</tr>
+						<tr id="rowtwo" class="tRow" style="width: 360px;">
+							<td class="leftrow"><p class="inputfield">Cost &nbsp;</p></td>
+							<td class="rightrow"><input type="text" id="cost" name="cost" placeholder="CPM..."/></td>
+						</tr>
+					</tbody>
+				</table>
+                <div id="rowthree" class="tRow" style="width: 360px;">
+                    <div id="text" class="float">CPA:</div> <!-- /text -->
+                    <div id="budgetbox">
+                    <textarea id="budget" class="float" style="display: none;"></textarea> <!-- /budget -->
+                    </div> <!-- /budgetbox -->
+                </div> <!-- /rowthree -->
+
+				<!-- buttons -->
+				<button id="calcAction" onclick="calcCPC();">Calculate</button><button id="calcclear" onclick="calcClear();">Clear</button>
+				
+				<div id="feedback">
+					<div id="cpcformula" style="display:none;">Formula: CPA = Cost Per Action / Conversions</div>
+				</div> <!-- /feedback -->
+			
+
+
+			</div> <!-- /calcwrapper -->
+
+		</div> <!-- /mainContainer -->
+	</body>
+</html>
