@@ -1,0 +1,83 @@
+#mainContainer{
+	width: 500px;
+	height: 400px;
+}
+#cpmheader{
+	width: 500px;
+	height: 60px;
+}
+
+#calcwrapper{
+	width: 360px;
+	height: 400px;
+	margin-top: 2px;
+	margin-left: 68px;
+}
+#valtab{
+	width: 360px;
+	margin-bottom: 2px;
+}
+#feedback{
+	height: 40px; 
+	padding-top: 16px;
+	width: 360px;
+	margin-bottom: 12px;
+	margin-left: 2px;
+	text-align: center;
+}
+#calcAction{
+	margin-left: 100px;
+}
+#calcclear{
+	margin-left: 20px;
+}
+#budget{
+    margin-left: 11px;
+    width: 178px;
+    height: 40px;
+    resize: none;
+    border-radius:4px;
+}
+#budgetbox{
+    display: inline-block;
+    float: left;
+    height: 40px;
+    width: 178px;
+}
+#rowthree{
+    margin-bottom: 20px;
+    height: 40px;
+}
+#text{
+    height: 40px;
+    width: 90px;
+    margin-left: 40px;
+    text-align: right;
+}
+.cpmheader{
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+hr.cpmheader{
+	height: 2px;
+	background-color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+.tRow{
+	width: 360px;
+}
+.leftrow{
+	width:130px;
+}
+.rightrow{
+	width:210px;
+}
+.inputfield{
+	font-weight: bold; 
+	text-align: right;
+}
+.float{
+    display: inline-block;
+    float: left;
+}
